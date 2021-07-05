@@ -1,0 +1,2 @@
+# EchartsMap
+基於echarts和jQuery集成，用於生成各個城市的流向地圖及熱力地圖
