@@ -1,6 +1,7 @@
 # EchartsMap
 
-[![standard-readme compliant](https://img.shields.io/badge/readme style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)![https://img.shields.io/badge/build-passing-brightgreen](https://img.shields.io/badge/build-passing-brightgreen)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![https://img.shields.io/badge/build-passing-brightgreen](https://img.shields.io/badge/build-passing-brightgreen)
 
 ## 项目背景
 *echartsMap* 是基於 *echarts* 和 *jQuery* 集成的，用於生成各個城市的流向地圖及熱力地圖的方法。由於方法需要利用 *ajax* 接入 *geoJson* 數據，所以直接打開頁面顯示不了，需要啓用 *http* 服務。
@@ -17,7 +18,7 @@ git clone https://github.com/Eclair-H/EchartsMap.git
 
 ### 引入
 
-引入* jQuery.js* 以及 *echarts.js*
+引入 *jQuery.js* 以及 *echarts.js*
 
 下载地址：[jQuery 下載地址](https://jquery.com/download/)；[echarts 下載地址](https://echarts.apache.org/zh/download.html)
 
