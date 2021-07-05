@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>echartsMap</title>
+  </head>
+  <body>
+    <div id="mapid" style="height: 600px; width: 800px"></div>
+    <div id="areaMap" style="height: 600px; width: 800px"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echartsMap.js"></script>
+
+    <script>
+      // 进入页面调用
+      $(function () {
+        mapCharts('mapid', 'changsanjiao', data, 1);
+        mapCharts('areaMap', 'shanghai', data2, 0, setting);
+      });
+
+      // 流向图数据
+      var data = [
+        {
+          startLat: '31.28', // 流向起点/终点 纬度
+          startLng: '121.46', // 流向起点/终点 经度
+          tollStationName: '上海', // 流向起点/终点 城市名
+          tollStationCount: 12345, // 流向起点/终点数值，可无
+          // 流出/流入城市数据 可填写多个，可不填，但不可没有list值
+          list: [
+            {
+              fromToTollStationName: '合肥市', // 流出/流入 城市名
+              startLat: '31.86', // 流出/流入 纬度
+              startLng: '117.28', // 流出/流入 经度
+              trafficFlow: 123, // 流出/流入 数值，可无
+            },
+          ],
+        },
+      ];
+
+      // 修改配置
+      var setting = {
+        tooltip: {
+          trigger: 'item',
+          formatter: '{b} {c} ',
+        },
+      };
+
+      // 热力图数据
+      var data2 = [
+        { name: '嘉定区', value: 94450 },
+        { name: '奉贤区', value: 50152 },
+        { name: '宝山区', value: 82343 },
+        { name: '崇明区', value: 11399 },
+        { name: '徐汇区', value: 97974 },
+        { name: '普陀区', value: 39727 },
+        { name: '杨浦区', value: 105730 },
+        { name: '松江区', value: 96023 },
+        { name: '浦东新区', value: 306592 },
+        { name: '虹口区', value: 24600 },
+        { name: '金山区', value: 44584 },
+        { name: '长宁区', value: 36863 },
+        { name: '闵行区', value: 164701 },
+        { name: '青浦区', value: 47151 },
+        { name: '静安区', value: 39730 },
+        { name: '黄浦区', value: 31009 },
+      ];
+    </script>
+  </body>
+</html>
